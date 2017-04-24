@@ -13,8 +13,8 @@ __copyright__ = 'Copyright 2016, Symphony Communication Services LLC'
 
 import symphony
 
-from base import Realtime
-from base import Messaging
+from realtime import Realtime
+from messaging import Messaging
 
 
 class Agent(Realtime, Messaging):
