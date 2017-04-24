@@ -37,6 +37,13 @@ class Messaging(object):
         status_code, response = self.__rest__.GET_query(req_hook, req_args)
         return status_code, response
 
+    def create_attachment(self, stream_id):
+        ''' create attachment '''
+        req_hook = 'agent/v1/stream/' + str(stream_id) + '/attachment/create'
+        req_args = None
+        status_code, response = self.__rest__.POST_query(req_hook, req_args)
+        return status_code, response
+
     def send_message(self, stream_id, msgFormat, message):
         ''' send message to threadid/stream '''
         req_hook = 'agent/v2/stream/' + stream_id + '/message/create'
