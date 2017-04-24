@@ -15,10 +15,10 @@ import json
 import unicodedata
 
 
-class Base(object):
+class Realtime(object):
 
     def __init__(self, *args, **kwargs):
-        super(Base, self).__init__(*args, **kwargs)
+        super(Realtime, self).__init__(*args, **kwargs)
 
     def remove_control_characters(self, s):
         return "".join(ch for ch in s if unicodedata.category(ch)[0] != "C")
@@ -49,11 +49,4 @@ class Base(object):
         req_args = None
         status_code, response = self.__rest__.GET_query(req_hook, req_args)
         response = ast.literal_eval(response)
-        return status_code, response
-
-    def send_message(self, threadid, msgFormat, message):
-        ''' send message to threadid/stream '''
-        req_hook = 'agent/v2/stream/' + threadid + '/message/create'
-        req_args = '{ "format": "%s", "message": "'"%s"'" }' % (msgFormat, message)
-        status_code, response = self.__rest__.POST_query(req_hook, req_args)
         return status_code, response

@@ -13,10 +13,11 @@ __copyright__ = 'Copyright 2016, Symphony Communication Services LLC'
 
 import symphony
 
-from base import Base
+from realtime import Realtime
+from messaging import Messaging
 
 
-class Agent(Base):
+class Agent(Realtime, Messaging):
 
     def __init__(self, url, session, keymngr):
         self.__url__ = url
