@@ -26,7 +26,7 @@ class Crypt():
         fd, path = tempfile.mkstemp()
         filehandle = open(path, 'wb')
         filehandle.write(string)
-        filehandle.close
+        filehandle.close()
         return path
 
     def p12parse(self):
