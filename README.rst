@@ -93,3 +93,11 @@ If you want to make a major change hit me up via symphony,
 I am Matt Joyce ( symphony corporate ).  I am glad to hear
 ideas.  And I'd love to see this project take on a life of
 it's own.
+
+License
+------------
+
+Copyright 2016-2019 Symphony LLC
+
+The code in this repository is distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
