@@ -1,6 +1,9 @@
 A Symphony Python Module
 ========================
 
+.. image:: https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-archived.svg
+      :target: https://finosfoundation.atlassian.net/wiki/display/FINOS/Archived
+
 .. image:: https://img.shields.io/pypi/v/python-symphony.svg
       :target: https://pypi.python.org/pypi/python-symphony/
 
